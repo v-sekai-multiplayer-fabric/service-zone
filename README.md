@@ -1,7 +1,7 @@
 # fabric-zone-domain
 
-One zone, as one deployable thing. A **domain** is a packing of planes and edge planes, and a
-ring forces co-location, so this is the packing that shares a ring.
+One zone, as one deployable thing. A **domain** is a packing of planes and transport layers,
+and a ring forces co-location, so this is the packing that shares a ring.
 
 ## What is in it, and why these
 
@@ -39,8 +39,8 @@ now, and the packing would be the same anywhere.
 ## Ports
 
 None between members. They reach each other over iceoryx2, which is shared memory and has no
-port. The only listening sockets belong to the two edge planes, because an edge plane is a
-plane with networking.
+port. The only listening sockets belong to the two transport layers, because a transport layer
+is a plane with networking.
 
 ## State
 
