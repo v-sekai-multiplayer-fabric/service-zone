@@ -27,15 +27,6 @@ repository holds the manifest that runs them together, which is what a domain is
 and therefore needs no ring. `fabric-behaviour-domain`, because a plan changes in seconds and
 ARDY wants a GPU, and neither is a reason to make every zone cost one.
 
-That is the whole test. A member is here because it shares a ring, and everything else is free
-to live elsewhere.
-
-## A domain is not a machine
-
-A machine is where a domain happens to run today. A domain is the set of processes that have
-to be together, which is a property of the data flow rather than of the platform. Fly runs it
-now, and the packing would be the same anywhere.
-
 ## Ports
 
 None between members. They reach each other over iceoryx2, which is shared memory and has no
